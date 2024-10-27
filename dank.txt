@@ -1,25 +1,25 @@
-make age be 2                //let age = 2;
-make name be "Monkey"        //let name = "Monkey";
-make result be 10 * (20 / 2) //let result = 10 * (20 / 2);
+make age be 2;                //let age = 2;
+make name be "Monkey";        //let name = "Monkey";
+make result be 10 * (20 / 2); //let result = 10 * (20 / 2);
 
 make myArray be [1, 2, 3, 4, 5]; //let myArray = [1, 2, 3, 4, 5];
 
 make thorsten be {"name": "Thorsten", "age": 28}; //let thorsten = {"name": "Thorsten", "age": 28};
 
-myArray[0] // => 1
-thorsten["name"] // => "Thorsten"
+myArray[0]; // => 1
+thorsten["name"]; // => "Thorsten"
 
-//let add = fn(a, b) { return a + b; } // or just { a + b; }
-make add be fun(a, b) { a + b; }
+//let add = fn(a, b) { return a + b; }; // or just { a + b; }
+make add be fun(a, b) { a + b; };
 add(1, 2);
 
 //let fibonacci = fn(x) {
 make fibonacci be fun(x) {
   if (x == 0) {
-    0
+    0;
   } else {
     if (x == 1) {
-      1
+      1;
     } else {
       fibonacci(x - 1) + fibonacci(x - 2);
     }
@@ -35,8 +35,8 @@ make twice be fun()
 
 
 //let addTwo = fn(x) {
-make addTwo be fun(x)
-  return x + 2;
+make addTwo be fun(x) {
+  give x + 2;
 };
 twice(addTwo, 2); // => 6
 
